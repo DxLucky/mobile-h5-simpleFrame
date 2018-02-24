@@ -1,0 +1,27 @@
+//色调Color
+$dominant-hue:#f73352;//主色调
+$body-bgColor:#fff;//body背景颜色
+$default-fontColor:#323239;//默认字体颜色
+$header-bgColor:#d70d13;//header背景颜色
+$fontColor-white:$body-bgColor;//白色字体颜色
+$cutOff-borderColor:#d8d8d8;//分割底线颜色
+$navFigcaption-fontColor:$header-bgColor;//首页导航字体颜色
+
+//尺寸Size
+$header-height:80px;//header高度
+$header-fontSize:34px;
+$header-distanceRight:15px;
+$header-distanceLeft:10px;
+$menu-fontSize:$header-fontSize;
+$turnBack-fontSize:40px;
+$navLink-fontSize:30px;
+$navLink-height:70px;
+$navDistance-around:$header-distanceLeft;
+
+//公用模块Common
+@mixin flexLayout{//弹性布局
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+

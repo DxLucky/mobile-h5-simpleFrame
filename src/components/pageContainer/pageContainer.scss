@@ -1,0 +1,36 @@
+@import "../../asset/style/dominant.scss";
+div.pageContainer{
+  >ul{
+    &.headerArea{
+      @include flexLayout;
+      justify-content: space-between;
+      background-color: $header-bgColor;
+      height: $header-height;
+      padding: 0 $header-distanceRight 0 $header-distanceLeft;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      >li{
+        .iconfont{
+          font-size: $turnBack-fontSize;
+          color: $fontColor-white;
+        }
+        span{
+          color: $fontColor-white;
+          &.title{
+            font-size: $header-fontSize;
+          }
+        }
+        &:first-child{
+          .iconfont{
+            font-size: $menu-fontSize;
+          }
+        }
+      }
+    }
+  }
+  >section{
+    margin-top:$header-height;
+  }
+}

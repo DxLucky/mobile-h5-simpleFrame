@@ -1,0 +1,19 @@
+@import "dominant.scss";
+*{
+  font-family: Helvetica Neue,Helvetica,Arial,microsoft yahei,simsun;
+  padding: 0;
+  margin: 0;
+  color: $default-fontColor
+}
+li{list-style: none}
+button,input,select{outline: none}
+a{
+  text-decoration: none;
+  color: white;
+  &:hover{
+    color: $dominant-hue;
+  }
+}
+body{
+  background-color: $body-bgColor;
+}

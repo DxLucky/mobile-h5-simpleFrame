@@ -1,0 +1,24 @@
+@import "../asset/style/dominant";
+$navFigure-distanceTop:40px;
+$navFigure-distanceAround:60px;
+$navSignGroup-distanceBottom:40px;
+.indexArea{
+  padding: $navFigure-distanceTop $navFigure-distanceAround 0 $navFigure-distanceAround;
+  ul{
+    &.navSign{
+      @include flexLayout;
+      justify-content: space-between;
+      margin-bottom: $navSignGroup-distanceBottom;
+      li{
+        text-align: center;
+        img{
+          width: 130px;
+        }
+        figcaption{
+          font-size: 30px;
+          color: $navFigcaption-fontColor;
+        }
+      }
+    }
+  }
+}

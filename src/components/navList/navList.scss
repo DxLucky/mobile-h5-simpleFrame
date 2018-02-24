@@ -1,0 +1,17 @@
+@import "../../asset/style/dominant.scss";
+.navList{
+  li{
+    .navLink{
+      display: block;
+      @include flexLayout;
+      justify-content: space-between;
+      border-bottom: 1px solid $cutOff-borderColor;/*no*/
+      height: $navLink-height;
+      margin: 0 $navDistance-around;
+      padding: 0 $navDistance-around;
+      span{
+        font-size: $navLink-fontSize;
+      }
+    }
+  }
+}
