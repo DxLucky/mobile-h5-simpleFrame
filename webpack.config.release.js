@@ -7,7 +7,7 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");//
 module.exports={
     entry:{
         main:"./src/main.jsx",
-        vendor: ["react", "react-dom","react-router-dom","moment","react-particles-js","whatwg-fetch"]
+        vendor: ["react", "react-dom","react-router-dom","moment","whatwg-fetch"]
     },
     output:{
         path:path.resolve(process.cwd(),"dist"),
@@ -41,6 +41,12 @@ module.exports={
                             }
                         },
                         "resolve-url-loader",
+                        {
+                            loader: "px2rem-loader",
+                            options: {
+                                remUnit: 75
+                            }
+                        },
                         "sass-loader?sourceMap",
                         {
                             loader: "postcss-loader",//自动补全css浏览器前缀
@@ -48,7 +54,7 @@ module.exports={
                                 sourceMap: true,
                                 plugins: function () {
                                     return [
-                                        require("autoprefixer")({browsers:["last 20 versions"]})]
+                                        require("autoprefixer")({browsers:["last 40 versions"]})]
                                 }
                             }
                         }

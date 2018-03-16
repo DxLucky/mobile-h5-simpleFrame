@@ -54,7 +54,7 @@ module.exports={
                                 sourceMap: true,
                                 plugins: function () {
                                     return [
-                                        require('autoprefixer')({browsers:["last 40 versions"]})]
+                                        require("autoprefixer")({browsers:["last 40 versions"]})]
                                 }
                             }
                         }
